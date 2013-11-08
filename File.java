@@ -1,4 +1,7 @@
+package challenge5;
+
 import java.io.BufferedReader;
+import java.io.FileNotFoundException;
 import java.io.FileReader;
 
 /* Helper Class */
@@ -31,7 +34,10 @@ class File
       //Load file
       try {
          fl = new FileReader(this.address); // NOT_FOUND Exception
-      } catch (Exception e) { System.err.println("File ("+this.address+") not found!"); }
+      } catch (FileNotFoundException e) {
+    	  System.err.println("File ("+this.address+") not found!");
+    	  System.exit(1);
+      }
 
       //Initialize
       BufferedReader bfr = new BufferedReader( fl );
@@ -44,7 +50,9 @@ class File
             sb.append(ln+"\n");
 
          bfr.close();
-      } catch (Exception e) {}
+      } catch (Exception e) {
+    	  System.exit(2);
+      }
 
 
       //Convert to String, store and return

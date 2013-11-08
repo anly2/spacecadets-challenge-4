@@ -1,0 +1,8 @@
+clear X, Y;
+incr X;
+jump 2;
+   incr Y;
+incr X;
+jump to 7;
+   incr Y;
+incr X;

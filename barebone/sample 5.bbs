@@ -1,0 +1,5 @@
+clear X, Y;
+incr X,Y,X;
+output X,Y;
+
+input X,Y;

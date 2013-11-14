@@ -3,7 +3,7 @@ import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
 
-public class Interpreter extends Environment {
+public class Interpreter {
 	//Implement Environment
 	HashMap<String, Integer> scope;
 	String[] statements;

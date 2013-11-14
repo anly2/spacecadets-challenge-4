@@ -3,12 +3,16 @@ import java.util.Scanner;
 import java.util.regex.Pattern;
 import java.util.regex.Matcher;
 
+/* Redundant Class
+ * It was supposed to act as an interface but only made things more complicated *
+ 
 abstract class Environment {
 	HashMap scope;  // env.scope is the scope containing defined variables and their values
 	String[] statements;  // env.statements is a String array listing the statements in the program code
 	int _pc;  // env._pc is the environment's program counter
 	// env.statements[env._pc]   is the currently run statement
 }
+*/
 
 
 public abstract class Command {
